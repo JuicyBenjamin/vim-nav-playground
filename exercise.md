@@ -1,77 +1,53 @@
 ---
-path: "/exercise-0"
-title: "hjkl-x"
-order: "69A"
+path: "/exercise-1"
+title: "dyp"
+order: "70A"
 section: "Misc Content"
-description: "This is the first exercise to try out."
+description: "This is the basic movement and editing of text"
 ---
 ## NOTE
 To use the exercises, please curl the file to your machine and edit it with vim.
 
-## Exercise 0: Basic movement, h, j, k, l, w, b
-### press j to go down
+## Exercise 1: Basic Editing
+### Delete a line with dd
 
-### press l to follow the line
---------------------------- " press x to delete the o
-                             " press j to go to the next action
+### Yank and paste.  yy to yank line, p to paste line below, P above
+yank me and paste below (yyp)
+yank me and paste below (yyp)
+yank me and paste below (yyp)
+yank me and paste above (yyP)
+yank me and paste above (yyP)
+yank me and paste above (yyP)
+
+### Visual Mode
+#### Visual Mode
+Highlight part of this line by pressing v, then navigate around
+escape to leave visual mode
+
+#### Visual Line Mode
+Highlight this line by pressing V, then navigate around
+escape to leave visual mode
+
+#### Visual Mode + y / p
+Highlight this line by pressing V, then press y  (What happened?)
+Highlight this line by pressing V, then press y  (What happened?)
+press p (What happened?)
+
+Highlight this point by pressing v, press wy  (What happened?)
+press p (What happened?)
+
+Lets repeat but with d instead of y, (What happened?)
+
+## Part 3: The relationship of y / d
+:h reg
+:reg
+
+What did we see there?
+
+yank this line
+
+yank this line
+yank this line
+What happened to the registers?
 
 
-
-
-### press l and j to follow the line and x to delete the o
--+
- |
- |
- +------+
-        |
-        |
-        +------+
-               |
-               |
-               +------
-
-### press l and j and h to follow the line and x to delete the o
--+
- |
- |
- +------+
-        |
-        |
- +------+
- |
- +------+
-        |
-        |
- ------+
-
-### press l, j, h, and k to follow the line and x to delete the o
--+      +------+      +------+      +-----
- |      |      |      |      |      |
- |      |      |      |      |      |
- +------+      |      |      +------+
-               |      |
-        +------+      |
-        |             |
-        |             |
-        |             |
-        +-------------+
-
-### press w to get to o and press x to delete
-+-+      +------+      +------+      +-----
-
-### b = inverse w: press w, j, and b to get to o and press x to delete
-+-+      +------+      +------+      +-----+
-                                           |
--+      +------+      +------+      +-----+
-
-### Go in circles until you feel good
-
-       +------+
-       |      |
-       |      |
-       |      |
-       +------+------+
-              |      |
-              |      |
-              |      |
-              +------+
